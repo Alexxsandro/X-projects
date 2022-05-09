@@ -1,0 +1,675 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    background-color: #0d1117; /*#0d1117*/
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+header{
+    background-color: #161b22;
+    border-right: 3px solid #353536;
+}
+
+.container_navegacao{
+    width: 100px;
+    margin: 20px auto;
+    position: relative;
+}
+#fotoPerfil{
+    width: 45px;
+    height: 45px;
+}
+
+.container_perfil{
+    display: block;
+    background-color: #fff;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    top: 10px;
+    right: 35px;
+    border-radius: 7px;
+    margin-bottom: 100px;
+    border: 2px solid rgb(14, 101, 56);
+}
+
+.container_perfil span{
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    width: 120px;
+    bottom: 38px;
+    height: 10px;
+    left: 55px;
+    font-size: 16px;
+    color: #c9d1d9;
+}
+
+.navegacao_desktop{
+    width: 150px;
+    
+}
+
+#configura_informacao{
+    position: absolute;
+    top: 5px;
+    width: 45px;
+    height: 45px;
+    left: 1000px;
+    background-image: url('../img/icons8-configurações-3-50\ \(1\).png');
+    background-size: cover;
+}
+
+.navegacao_desktop h3{
+    color:#c9d1d9;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 21px;
+    position: relative;
+    margin-left: 5px;
+}
+
+.navegacao_desktop h3::before{
+    content: '';
+    display: block;
+    background-image: url('../img/icons8-microsoft-project-64.png');
+    background-size: cover;
+    width: 30px;
+    right: 150px;
+    height: 30px;
+    bottom: 0px;
+    position: absolute;
+}
+
+.navegacao_desktop ul{
+    list-style-type: none;
+}
+
+.navegacao_desktop ul li{
+    color: #c9d1d9;
+    font-size: 17px;
+    font-family: cursive, Helvetica, sans-serif;
+    padding-top: 15px;
+    position: relative;
+}
+
+.navegacao_desktop ul li::before{
+    content: "";
+    display: block;
+    background-image: url("../img/checked_projetos.png");
+    background-size: cover;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 12px;
+    right: 160px;
+}
+
+.container_logo{
+    width: 95%;
+    height: 60px;
+    margin: 10px auto;
+    position: relative;
+    border:1px solid #353536;
+    background-color: #161b22;
+}
+
+.container_logo img{
+    width: 50px;
+    height: 50px;
+    margin: 3px auto;
+    display: block;
+
+}
+
+.container_logo span{
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 54%;
+    font-size: 20px;
+    color: #c9d1d9;
+}
+
+main{
+    background-color: #161b22;
+    width: 95%;
+    height: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.projeto_ctn{
+    background-color: #fff;
+    width: 320px;
+    height: 180px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.cores_projeto{
+    display: flex;
+}
+
+.projeto_ctn h3{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #474747;
+}
+
+.container_data{
+   margin-left: 45px;
+   margin-top: 20px;
+   color: #8d8d8d;
+   position: relative;
+}
+
+.container_banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container_gerador{
+    width: 350px;
+    height: 120px;
+    margin-top: 10px;
+    border-radius: 7px;
+    background-color: #fff;
+    border-left: 8px solid rgb(52, 189, 63);
+}
+
+.container_gerador a{
+    display: block;
+    margin-top: 15px;
+}
+
+.container_gerador a h3{
+    color:rgb(52, 189, 63);
+    margin-left: 20px;
+    
+}
+
+.container_gerador h2{
+    margin-left: 20px;
+    color: gray;
+}
+
+.container_localizacao{
+    background-color: #fff;
+    width: 350px;
+    height: 120px;
+    margin-top: 10px;
+    border-radius: 7px;
+    border-left: 8px solid rgb(157, 101, 189);
+}
+
+.container_localizacao a{
+    display: block;
+    margin-top: 15px;
+}
+.container_localizacao h2{
+    margin-left: 20px;
+    color: gray;
+}
+
+.container_localizacao h3{
+    color:rgb(157, 101, 189);
+    margin-left: 20px;
+}
+
+.ctn_ip{
+    background-color: #fff;
+    margin: 10px 100px;
+    border-left: 7px solid #58a6ff;
+    width: 900px;
+    height: 300px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.ctn_ip h3{
+   margin: 50px 0px 0px 50px;
+}
+
+.ctn_ip p{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+
+.ctn_ip a{
+    width: 180px;
+    background-color: #58a6ff;
+    padding: 10px;
+    color: #fff;
+    display: block;
+    border-radius: 7px;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal_show{
+    width: 400px;
+    height: 290px;
+    top: 245px;
+    left: 800px;
+    border-radius: 15px;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+    opacity: 0;
+}
+
+.modal_show img{
+    display: block;
+    margin: 2px auto;
+    width: 50px;
+}
+
+.modal_container{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.modal_show p{
+    color: gray;
+    padding-top: 0px;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: -7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal_container span{
+    color:#58a6ff;
+    font-weight: bold;
+}
+
+.btn_volta_ip{
+    background-image: url('../img/icons8-x-64.png');
+    display: block;
+    position: absolute;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 340px
+}
+
+.buscaIp {
+    position: absolute;
+    top: 0px;
+    background-color: #fff;
+    width: 350px;
+    height: 250px;
+    margin-left: 10px;
+    display: none;
+}
+
+.buscaIp h3{
+    color: #161b22;
+}
+
+.buscaIp input{
+    display: block;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: 1px solid gray;
+}
+
+.buscaIp input::placeholder{
+    color: rgb(216, 216, 216);
+}
+
+.buscaIp button{
+    padding: 10px;
+    width: 193px;
+    margin-left: 50px;
+    display: block;
+    border-radius: 7px;
+    border: 1px solid #58a6ff;
+    background-color: #58a6ff;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 17px;
+    cursor:pointer;
+}
+
+.geradorSenha{
+    position: absolute;
+    top: 0px;
+    background-color: #fff;
+    width: 350px;
+    height: 250px;
+    margin-left: 10px;
+    display: none;
+}
+
+.geradorSenha input{
+    display: block;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    width: 194px;
+}
+
+.geradorSenha button{
+    padding: 10px;
+    width: 193px;
+    margin-left: 50px;
+    display: block;
+    border-radius: 7px;
+    border: 1px solid #58a6ff;
+    background-color: #58a6ff;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 17px;
+    cursor:pointer;
+}
+
+#senhaGeradaEstilo{
+    margin-top: 50px;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+#copia_senha{
+    padding: 10px;
+    background-color: #58a6ff;
+    border: 1px solid #58a6ff;
+    width: 80px;
+    margin-left: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 7px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+#copia_senha::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-image:url('../img/icons8-copiar-50\ \(1\).png');
+    background-size: cover;
+    position: absolute;
+    top: 151px;
+    left: 57px;
+}
+
+.encurtadorLink{
+    position: absolute;
+    top: 0px;
+    background-color: #fff;
+    width: 350px;
+    height: 250px;
+    margin-left: 10px;
+    display: none;
+}
+
+.encurtadorLink input{
+    display: block;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    width: 194px;
+}
+
+.encurtadorLink button{
+    padding: 10px;
+    width: 193px;
+    margin-left: 50px;
+    display: block;
+    border-radius: 7px;
+    border: 1px solid #58a6ff;
+    background-color: #58a6ff;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 17px;
+    cursor:pointer;
+}
+
+#sairConta{
+    position: absolute;
+    top: 550px;
+    display: block;
+    background-image: url('../img/icons8-login-arredondado-à-direita-50\ \(1\).png');
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.container_config_perfil{
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    z-index: 1;
+    left: 900px;
+    top: 25px;
+    box-shadow: 0px 0px 3px 1px #161b22;
+    position: absolute;
+    display: none; 
+}
+
+.config_seta_perfil{
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 288px;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 10; 
+}
+
+.config_seta_perfil p {
+    opacity: 0;
+}
+
+.container_config{
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.container_config p{
+    margin-top: 15px;
+}
+
+.imagem_perfil_ctn{
+   position: absolute;
+   margin-top: 50px;
+}
+
+.container_config img{
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.container_config a{
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 0px;
+    padding-top:  10px;
+    margin-left: 2px;
+    border: 1px solid #9c9c9c;
+    padding: 11px;
+}
+
+.container_config label{
+  margin-right: 15px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.container_config a:hover{
+    padding: 10px;
+    border: 2px solid rgb(157, 101, 189);
+}
+
+.container_config a:hover::before{
+    content: '';
+    width: 40px;
+    padding-left: 22px;
+    margin-top: -11px;
+    display: block;
+    margin-left: -12px;
+    height: 76px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.container_config input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+}
+
+.container_config input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -4px;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(157, 101, 189);
+}
+
+.container_config input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(157, 101, 189);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: -1px;
+  left: 8px;
+}
+
+.container_config span{
+  margin: 0px 5px;;
+}
+
+.imagem_perfil_ctn button{
+    padding: 10px 20px;
+    display: block;
+    margin-top: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: rgb(157, 101, 189);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid rgb(157, 101, 189);
+}
+
+.altera_input{
+    position: absolute;
+    top: 57px;
+    left: 65px;
+    opacity: 0;
+}
+
+.altera_input input{
+    padding: 4px;
+    border: 1px solid rgb(241, 241, 241);
+    width: 220px;
+}
+
+.altera_input input::placeholder{
+    color: #9c9c9c;
+}
+
+.altera_input_email{
+    position: absolute;
+    top: 100px;
+    left: 69px;
+    opacity: 0;
+}
+
+.altera_input_email input{
+    width: 220px;
+    padding: 4px;
+    border: 1px solid rgb(241, 241, 241);
+}
+
+.altera_input_email input::placeholder{
+    color: #9c9c9c;
+}
+
+.altera_input_senha{
+    position: absolute;
+    top: 138px;
+    left: 65px;
+    opacity: 0;
+}
+
+.altera_input_senha input{
+    padding: 4px;
+    border: 1px solid rgb(241, 241, 241);
+    width: 220px;
+}
+
+.altera_input_senha input::placeholder{
+    color: #9c9c9c;
+}
+
+#voltaBaixoFoto{
+    width: 40px;
+    height: 40px;
+    left: 230px;
+    z-index: 10;
+    position: absolute;
+    height: 10px;
+    top: -247px;
+    bottom: 0px;
+    display: block;
+    padding: 15px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#voltaBaixoFoto::before{
+    content: '';
+    background-image: url('../img/icons8-x-50.png');
+    background-size: cover;
+    height: 23px;
+    width: 23px;
+    display: block;
+}

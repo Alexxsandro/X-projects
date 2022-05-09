@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Ferramentas</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="container_navegacao">
+                <div class="container_perfil">
+                    <img id="fotoPerfil" src="./img/perfil_gato.png" alt="Icons8">
+                    <span id="nomePerfil"></span>
+                </div>
+                <nav class="navegacao_desktop">
+                    <h3>Projeto</h3>
+                    <ul>
+                        <a href="#" onclick="dnv_meuIp()">
+                            <li>Meu Ip</li>
+                        </a>
+                        <a href="#" onclick="dnv_encurto()">
+                            <li>Encurtado link</li>
+                        </a>
+                        <a href="#" onclick="gerandoSenha()">
+                            <li>Gerar senha</li>
+                        </a>
+                        <a href="#" onclick="buscandoIpUsers()">
+                            <li>Localização</li>
+                        </a>
+                    </ul>
+                    <nav>
+                        <a href="#" id="sairConta"></a>
+            </div>
+        </header>
+        <div class="container_conteudo">
+            <div class="container_logo">
+                <img src="./img/logo_branca.png" alt="Icons8">
+
+               
+                <span> - XProjects</span>
+                <a href="#"><span id="configura_informacao"></span></a>
+            </div>
+            <div class="container_config_perfil">
+                <div class="config_seta_perfil">
+                    <p>1</p>
+                </div>
+                <div class="container_config">
+                    <h3>Configurações</h3>
+                    <div class="btn_volta_perfil"></div>
+                    <p id="atulizandoNomeConfig"><strong>Nome:</strong> teste</p>
+                    <div class="altera_input">
+                        <input type="text" placeholder="Nome..." id="configuracaoNome_">
+                    </div>
+                    <p id="atualizandoEmailConfig"><strong>E-mail:</strong> alex@gmail.com</p>
+                    <div class="altera_input_email">
+                        <input type="text" placeholder="E-mail" id="configuracaoEmail_">
+                    </div>
+                    <p id="atualizandoSenhaConfig"><strong>Senha:</strong> ******</p>
+                    <div class="altera_input_senha">
+                        <input type="text" placeholder="Senha..." id="configuracaoSenha_">
+                    </div>
+                    <input type="checkbox" class="check_config" id="generoMasculino" value="m">
+                    <span class="checkmark"></span>
+                    <label for="">Claro</label>
+                    <input type="checkbox" class="check_config" id="generoFeminino" value="f">
+                    <span class="checkmark"></span>
+                    <label for="">Escuro</label>
+                    <div class="imagem_perfil_ctn">
+                        <a href='#' id="linkImagemCarangueijo">
+                            <img src="./img/icons8-caranguejo-48.png" alt="Icons8">
+                        </a>
+                        <a href='#' id="linkImagemGato">
+                            <img src="./img/icons8-gato-48 (1).png" alt="Icons8">
+                        </a>
+                        <a href='#' id="linkImagemPanda">
+                            <img src="./img/icons8-panda-48.png" alt="Icons8">
+                        </a>
+                        <a href='' id="linkImagemTouro">
+                            <img src="./img/icons8-touro-48.png" alt="Icons8">
+                        </a>
+                        <button onclick="alteradadosConfig()">Salvar</button>
+                        <span id="voltaBaixoFoto" onclick="btn_fecha_config()"></span>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <div class="container_banner">
+                    <div class="container_gerador">
+                        <a href="#" onclick="gerandoSenha()">
+                            <h3>Gerador de senha</h3>
+                        </a>
+                        <a href="#" onclick="gerandoSenha()">
+                            <h2>Crie suas senhas</h2>
+                        </a>
+                    </div>
+                    <div class="container_localizacao">
+                        <a href="#" onclick="buscandoIpUsers()">
+                            <h3>Localização</h3>
+                        </a>
+                        <a href="#" onclick="buscandoIpUsers()">
+                            <h2>Veja sua localização</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="ctn_ip">
+                    <h3 id="teste">Meu ip é : Verificando IP</h3>
+                    
+                    <p class="dataAtualizada">Data 20h54min - 06/05/2022</p>
+                    <a href="#" id="btn_localiza_">Veja sua localização</a>
+                    <div class="buscaIp">
+                        <h3>Digite seu ip</h3>
+                        <p class="dataAtualizada">Data 20h54min - 06/05/2022</p>
+                        <input type="text" id="BuscandoIpNovo" placeholder="1574.456.785.41">
+                        <button onclick="retornoBuscaIp()">Buscar</button>
+                    </div>
+                    <div class="geradorSenha">
+                        <h3>Gerador de senha</h3>
+                        <p class="dataAtualizada">Data 20h54min - 06/05/2022</p>
+                        <input type="number" id="numeroCaractere" placeholder="Numero de caracteres..." step="0" min="0"
+                            max="10">
+                        <button onclick="gerandoNovo()">Buscar</button>
+                    </div>
+                    <div class="encurtadorLink">
+                        <h3>Encurtador de link</h3>
+                        <p class="dataAtualizada">Data 20h54min - 06/05/2022</p>
+                        <input type="text" id="encurtador_link" placeholder="Digite o link...">
+                        <button onclick="encurtadorUrl()">Buscar</button>
+                    </div>
+                </div>
+                <div class="modal_show">
+                    <img src="./img/icons8-menos-zoom-64.png" alt="Icons8">
+                    <a href="#" onclick="btn_volta_ip()"><span class="btn_volta_ip"></span></a>
+                    <div class="modal_container">
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>
